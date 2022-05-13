@@ -3,16 +3,15 @@
         v1.0
         by: Wassimulator
 
-    A very simple and straightforward package manager for games written in C.
-    Use SimplyPack.exe or compile simplypack.cpp to use the packer, this header 
-    only includes the unpacking algorithms.
+    A very simple and straightforward package manager for games, written in C.
+    Use SimplyPack.exe or compile simplypack.cpp to use the packer.
 
 ## the Packer
 
-    SimplyPack.exe takes 3 arguments:
-        - The path to the folder from which to pack files
-        - The path to the output file
-        - 1 or 0 to display detailed output of what was packed (optional)
+    **SimplyPack.exe** takes 3 arguments:
+        1- The path to the folder from which to pack files
+        2- The path to the output file
+        3- 1 or 0 to display detailed output of what was packed (optional)
     The packer is pretty simple, and will pack everything inside the folder you specify. 
     reserving a header at the beginning that contains the following information consecutively:
     - The number of files packed 
@@ -21,11 +20,11 @@
         - original file size
         - packed file location (relative to the beginning of the pack file)
 ## the Unpacker
-    To use the unpacker make sure you first call `SP_OpenPack` with the path to the 
+    To use the unpacker make sure you first call *'SP_OpenPack'* with the path to the 
     pack file. This call copies the pack into memory.
-    'SP_GetData' gets you a pointer to the data stored in memory, you should use
+    *'SP_GetData'* gets you a pointer to the data stored in memory, you should use
     this pointer to read the data, make sure you copy it.
-    `SP_ClosePack` frees the memory used by the pack.
+    *'SP_ClosePack'* frees the memory used by the pack.
     The algorithm doesn't hash but instead matches file names. This tool intended for smaller projects.
 
 
