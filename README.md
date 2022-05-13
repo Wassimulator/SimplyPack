@@ -29,5 +29,6 @@
     The algorithm doesn't hash but instead matches file names. This tool intended for smaller projects.
 
 
-    Dependencies: tinydir.h, included in the project, please read the copyright information for that in the file.
+    Dependencies: tinydir.h, included in the project, 
+    please read the copyright information for that in the file.
     Licensing info at the bottom.
