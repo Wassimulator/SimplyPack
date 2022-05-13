@@ -20,11 +20,11 @@
         - original file size
         - packed file location (relative to the beginning of the pack file)
 ## the Unpacker
-    To use the unpacker make sure you first call *'SP_OpenPack'* with the path to the 
+    To use the unpacker make sure you first call 'SP_OpenPack' with the path to the 
     pack file. This call copies the pack into memory.
-    *'SP_GetData'* gets you a pointer to the data stored in memory, you should use
+    'SP_GetData' gets you a pointer to the data stored in memory, you should use
     this pointer to read the data, make sure you copy it.
-    *'SP_ClosePack'* frees the memory used by the pack.
+    'SP_ClosePack' frees the memory used by the pack.
     The algorithm doesn't hash but instead matches file names. This tool intended for smaller projects.
 
 
