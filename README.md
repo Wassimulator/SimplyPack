@@ -7,12 +7,12 @@
     Use SimplyPack.exe or compile simplypack.cpp to use the packer, this header 
     only includes the unpacking algorithms.
 
-    SimplyPack takes 3 arguments:
+## the Packer
+
+    SimplyPack.exe takes 3 arguments:
         - The path to the folder from which to pack files
         - The path to the output file
         - 1 or 0 to display detailed output of what was packed (optional)
-
-## the Packer
     The packer is pretty simple, and will pack everything inside the folder you specify. 
     reserving a header at the beginning that contains the following information consecutively:
     - The number of files packed 
