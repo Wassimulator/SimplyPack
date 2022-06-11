@@ -9,8 +9,8 @@
 ## the Packer
 
     **SimplyPack.exe** takes 3 arguments:
-        1- The path to the folder from which to pack files
-        2- The path to the output file
+        1- The path to the folder from which to pack files, relative to the location of the exe
+        2- The path to the output file, relative to the location of the exe
         3- 1 or 0 to display detailed output of what was packed (optional)
     The packer is pretty simple, and will pack everything inside the folder you specify. 
     reserving a header at the beginning that contains the following information consecutively:
